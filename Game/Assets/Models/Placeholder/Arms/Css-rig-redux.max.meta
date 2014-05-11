@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 284d6c8b50576844d904ca6ea5702153
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: arm_mesh_nosleve
+    100002: Camera-target
+    100004: //RootNode
+    100006: FP Camera
+    100008: l-forearm
+    100010: l-forearm-twist
+    100012: l-ik
+    100014: l-index-low
+    100016: l-index-mid
+    100018: l-index-tip
+    100020: l-middle-low
+    100022: l-middle-mid
+    100024: l-middle-tip
+    100026: l-pinky-low
+    100028: l-pinky-mid
+    100030: l-pinky-tip
+    100032: l-ring-low
+    100034: l-ring-mid
+    100036: l-ring-tip
+    100038: l-thumb-low
+    100040: l-thumb-mid
+    100042: l-thumb-tip
+    100044: l-upperarm
+    100046: l-upperarm-movement
+    100048: L_Wrist_Controller
+    100050: lwrist
+    100052: r-forearm
+    100054: r-forearm-twist
+    100056: r-ik
+    100058: r-index-low
+    100060: r-index-mid
+    100062: r-index-tip
+    100064: r-middle-low
+    100066: r-middle-mid
+    100068: r-middle-tip
+    100070: r-pinky-low
+    100072: r-pinky-mid
+    100074: r-pinky-tip
+    100076: r-ring-low
+    100078: r-ring-mid
+    100080: r-ring-tip
+    100082: r-rist
+    100084: r-thumb-low
+    100086: r-thumb-mid
+    100088: r-thumb-tip
+    100090: r-upperarm
+    100092: r-upperarm-movement
+    100094: R_Wrist_Controller
+    100096: sleves
+    100098: top-sleve
+    400000: arm_mesh_nosleve
+    400002: Camera-target
+    400004: //RootNode
+    400006: FP Camera
+    400008: l-forearm
+    400010: l-forearm-twist
+    400012: l-ik
+    400014: l-index-low
+    400016: l-index-mid
+    400018: l-index-tip
+    400020: l-middle-low
+    400022: l-middle-mid
+    400024: l-middle-tip
+    400026: l-pinky-low
+    400028: l-pinky-mid
+    400030: l-pinky-tip
+    400032: l-ring-low
+    400034: l-ring-mid
+    400036: l-ring-tip
+    400038: l-thumb-low
+    400040: l-thumb-mid
+    400042: l-thumb-tip
+    400044: l-upperarm
+    400046: l-upperarm-movement
+    400048: L_Wrist_Controller
+    400050: lwrist
+    400052: r-forearm
+    400054: r-forearm-twist
+    400056: r-ik
+    400058: r-index-low
+    400060: r-index-mid
+    400062: r-index-tip
+    400064: r-middle-low
+    400066: r-middle-mid
+    400068: r-middle-tip
+    400070: r-pinky-low
+    400072: r-pinky-mid
+    400074: r-pinky-tip
+    400076: r-ring-low
+    400078: r-ring-mid
+    400080: r-ring-tip
+    400082: r-rist
+    400084: r-thumb-low
+    400086: r-thumb-mid
+    400088: r-thumb-tip
+    400090: r-upperarm
+    400092: r-upperarm-movement
+    400094: R_Wrist_Controller
+    400096: sleves
+    400098: top-sleve
+    4300000: top-sleve
+    4300002: sleves
+    4300004: arm_mesh_nosleve
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: arm_mesh_nosleve
+    13700002: sleves
+    13700004: top-sleve
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0500000007
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
