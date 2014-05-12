@@ -23,6 +23,11 @@ public class PlayerController : MonoBehaviour {
 	public float RunSpeed;
 	public float VelocityMagnitude;
 
+	public GameObject lighter;
+	public GameObject fpLighter;
+
+	public bool lighterOn;
+
 	void Start () 
 	{
 		if(networkView.isMine)
@@ -34,6 +39,8 @@ public class PlayerController : MonoBehaviour {
 		FirstPerson.gameObject.SetActive(false);
 		ThirdPerson.gameObject.SetActive(false);
 		DontDestroyOnLoad(gameObject);
+
+		lighterOn = true;
 	}
 
 	[RPC]
@@ -69,6 +76,8 @@ public class PlayerController : MonoBehaviour {
 		SpeedController();
 		//Animationcontroller();
 		VelocityMagnitude = Charcont.velocity.magnitude;
+
+		CheckForLighter();
 	}
 
 	public void SpeedController()
@@ -172,6 +181,31 @@ public class PlayerController : MonoBehaviour {
 			//stream.Serialize(ref Ani);
 			//GetComponent<NetworkAnimStates>().CurrentAnim = (Animations)Ani;
 		}
+	}
+
+	void CheckForLighter()
+	{
+		if(networkView.isMine)
+		{
+			if(Input.GetMouseButtonDown(0))
+		   		Client_SwitchLighter();
+		}
+	}
+
+	void Client_SwitchLighter()
+	{
+		lighterOn = !lighterOn;
+		fpLighter.gameObject.SetActive(lighterOn);
+		NetworkManager.instance.client_switchlight(myPlayer.PlayerName, lighterOn);
+	}
+
+	public void client_giveLighter()
+	{
+		LighterHolder lh = new LighterHolder();
+		lh.PlayersName = myPlayer.PlayerName;
+		lh.lighter = lighter;
+		NetworkManager.instance.lighters.Add(lh);
+		NetworkManager.instance.client_addlighter(myPlayer.PlayerName, lighter);
 	}
 }
 

@@ -49,6 +49,8 @@
      <Compile Include="Assets\Code\MenuManager.cs" />
      <Compile Include="Assets\Code\Networking\Main Network\LevelManager.cs" />
      <Compile Include="Assets\Code\Networking\Main Network\NetworkManager.cs" />
+     <Compile Include="Assets\Code\Networking\Networked Events\CineDoor.cs" />
+     <Compile Include="Assets\Code\Networking\Networked Events\CineDoorTrigger.cs" />
      <Compile Include="Assets\Code\Networking\Player\PlayerController.cs" />
      <Compile Include="Assets\Code\PLACEHOLDER.cs" />
      <None Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />

@@ -215,6 +215,8 @@ MonoBehaviour:
     LoadName: 
     PlayName: 
   listOfLevels: []
+  cineDoors: []
+  lighters: []
 --- !u!4 &1559410827
 Transform:
   m_ObjectHideFlags: 0

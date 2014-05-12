@@ -22,6 +22,10 @@ public class NetworkManager : MonoBehaviour {
 	public Level curLevel;
 	public List<Level> listOfLevels = new List<Level>();
 
+	public List<CineDoorHolder> cineDoors = new List<CineDoorHolder>();
+
+	public List<LighterHolder> lighters = new List<LighterHolder>();
+
 	void Awake()
 	{
 		instance = this;
@@ -138,6 +142,10 @@ public class NetworkManager : MonoBehaviour {
 	public void LoadLevel(string loadName)
 	{
 		matchStarted = true;
+		foreach(Player pl in PlayerList)
+		{
+			pl.pController.client_giveLighter();
+		}
 		Application.LoadLevel(1);
 	}
 
@@ -209,6 +217,73 @@ public class NetworkManager : MonoBehaviour {
 			}
 		}
 	}
+
+	public void Client_OpenDoor(GameObject go)
+	{
+		int id = -1;
+		Debug.Log (cineDoors.Count);
+		for(int i = 0; i < cineDoors.Count - 1; i++)
+		{
+			Debug.Log (i);
+			if(cineDoors[i].door == go)
+				id = i;
+		}
+		if(id != -1)
+			networkView.RPC("Server_OpenDoor", RPCMode.All, id);
+	}
+
+	[RPC]
+	void Server_OpenDoor(int id)
+	{
+		//if(networkView.isMine)
+		//{
+			cineDoors[id].cineDoor.openDoor();
+		//}
+	}
+
+	public void client_switchlight(string playerName, bool on)
+	{
+		int id = -1;
+		for(int i = 0; i < lighters.Count; i++)
+		{
+			if(lighters[i].PlayersName == playerName)
+			{
+				id = i;
+				print (playerName);
+			}
+		}
+		if(id!=-1)
+			networkView.RPC("Server_SwitchLighter", RPCMode.All, id, on, playerName);
+
+	}
+
+	[RPC]
+	public void Server_SwitchLighter(int id, bool on, string pname)
+	{
+		print (id);
+		if(pname == lighters[id].PlayersName)
+			lighters[id].lighter.gameObject.SetActive(on);
+
+	}
+
+	public void client_addlighter(string pn, GameObject go)
+	{
+		int id = -1;
+		for(int i = 0; i < lighters.Count - 1; i++)
+		{
+			if(lighters[i].lighter == go)
+				id = i;
+		}
+
+		if(id != -1)
+			networkView.RPC("server_addlighter", RPCMode.All, pn, id);
+	}
+
+	[RPC]
+	void server_addlighter(string pn, int i)
+	{
+		lighters[i].PlayersName = pn;
+	}
 }
 
 [System.Serializable]
@@ -227,4 +302,23 @@ public class Level
 {
 	public string LoadName;
 	public string PlayName;
+}
+
+[System.Serializable]
+public class CineDoorHolder
+{
+	public GameObject door;
+	public CineDoor cineDoor;
+
+	//void Start()
+	//{
+		//cineDoor = door.GetComponent<CineDoor>();
+	//}
+}
+
+[System.Serializable]
+public class LighterHolder
+{
+	public string PlayersName;
+	public GameObject lighter;
 }
