@@ -27,11 +27,15 @@ ArgumentException: You can only call GUI functions from inside OnGUI.
  
 (Filename:  Line: -1)
 
-UnloadTime: 0.269625 ms
+Started Server
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+UnloadTime: 0.247886 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1238.
-Total: 0.770833 ms (FindLiveObjects: 0.029891 ms CreateObjectMapping: 0.010869 ms MarkObjects: 0.135265 ms  DeleteObjects: 0.274758 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1239.
+Total: 0.854770 ms (FindLiveObjects: 0.028985 ms CreateObjectMapping: 0.011171 ms MarkObjects: 0.158514 ms  DeleteObjects: 0.329106 ms)
 
 Platform assembly: C:\Users\Storms\Desktop\Dark Story Games\Github\Horror-Game\Builds\Windows\Horror Game_Data\Managed\Boo.Lang.dll (this message is harmless)
 Couldn't send RPC function '__RPCNetworkDestroy'
