@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: d429d59174c94df46a74f98915e4147d
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Armature
+    100002: door_back
+    100004: door_front_A
+    100006: door_front_B
+    100008: exhaust_pipe
+    100010: root_ground
+    100012: //RootNode
+    100014: SchoolBus
+    100016: SchoolBusWrecked
+    100018: ScoolBusGlass1
+    100020: ScoolBusGlass2
+    100022: steering_wheel
+    100024: steering_wheel_axle
+    100026: suspension_back
+    100028: suspension_front
+    100030: wheel_back_left
+    100032: wheel_back_right
+    100034: wheel_front_left
+    100036: wheel_front_right
+    100038: wiper_A_left
+    100040: wiper_A_right
+    100042: wiper_B_left
+    100044: wiper_B_right
+    400000: Armature
+    400002: door_back
+    400004: door_front_A
+    400006: door_front_B
+    400008: exhaust_pipe
+    400010: root_ground
+    400012: //RootNode
+    400014: SchoolBus
+    400016: SchoolBusWrecked
+    400018: ScoolBusGlass1
+    400020: ScoolBusGlass2
+    400022: steering_wheel
+    400024: steering_wheel_axle
+    400026: suspension_back
+    400028: suspension_front
+    400030: wheel_back_left
+    400032: wheel_back_right
+    400034: wheel_front_left
+    400036: wheel_front_right
+    400038: wiper_A_left
+    400040: wiper_A_right
+    400042: wiper_B_left
+    400044: wiper_B_right
+    4300000: SchoolBusWrecked
+    4300002: ScoolBusGlass1
+    4300004: ScoolBusGlass2
+    9500000: //RootNode
+    13700000: SchoolBusWrecked
+    13700002: ScoolBusGlass1
+    13700004: ScoolBusGlass2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .400000006
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
